@@ -15,7 +15,7 @@ app.use('/api/chats',chatRouter);
 app.use('/api/messages',messagesRouter); 
 const io=require("socket.io")(server,{
     cors:{
-        origin:"http://localhost:3000",
+        origin:"*",
         method:["GET","POST"]
     }
 }); 
